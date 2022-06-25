@@ -1,0 +1,107 @@
+body {
+    background-color: #edede9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-wrapper {
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    font-weight: 300;
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+    color: #6b705c;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.todo-wrapper p {
+    font-style: italic;
+    color: #929286;
+    margin: 5px 0;
+    padding-top: 20px;
+}
+
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+
+.todo-wrapper ol li {
+    text-decoration: underline;
+    text-decoration-color: #b7b7a4;
+    color: #6b705c;
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background-color: #ddd;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #b7b7a4;
+}
+
+.todo-wrapper .pretty-button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #a5a58d;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.todo-wrapper input {
+
+    padding: 3px 6px;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width:1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
+
+    .todo-wrapper input {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    .todo-wrapper input {
+        width: 300px;
+    }
+}
